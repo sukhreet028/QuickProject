@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-image{
+    background-image: url('../img/last.jpeg');
+    background-size: cover;
+    height: auto;
+    background-position: center;
+}
+.myHeader{
+    height: 55px;
+display: flex;
+background-color:rgb(99, 62, 62);
+opacity: 0.9;
+position: sticky;
+top: 0%;
+}
+.logo{
+    /* display: none; */
+    width: 40%;
+    /* height: 50px; */
+/* background-color: aqua; */
+}
+.logo img{
+    width: 13%;
+    border-radius: 45px;
+    margin: 10px 60px;
+}
+.navigation{
+    width: 60%;
+/* background-color:black */
+}
+.nav-list{
+/* background-color: chocolate; */
+/* width: 100%; */
+/* height: 50px; */
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-top: 20px;
+
+}
+.nav-list li{ 
+    list-style: none;
+    /* padding: 15px 60px; */
+}
+.nav-list li a{
+  text-decoration: none; 
+  font-size: 25px; 
+  color: rgb(255, 255, 255);
+  color: black;
+}
+.nav-list li a:hover{
+    color: white;
+    cursor: pointer;
+}
+.burger-icon{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+    display: none;
+}
+.line{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 2px;
+}
+.content-container{
+    width: 100vw;
+    height: 94vh;
+    /* opacity: 0.7; */
+}
+/* .content-box{ */
+    /* height: 900vh; */
+    /* width: 100%; */
+/* } */
+.content-text{
+    /* background-color: violet; */
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 44%;
+    left: 64%;
+}
+.content-text h1{
+    color:rgb(48, 121, 131);
+    text-align: center;
+    margin-bottom: 3px;
+}
+.content-text p{
+    color: white;
+    font-size: 18px;
+}
+.welcome-btn button{
+    height: 38px;
+    width: 136px;
+    font-size: 20px;
+    border: 2px solid rgb(253, 252, 252);
+    background: none;
+    padding: 4px;
+    color:rgb(48, 121, 131);
+    /* color: rgb(245, 131, 38); */
+    /* background-color: transparent; */
+    margin-top: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.welcome-btn button:hover{
+    background-color: rgb(245, 240, 240);
+}
+.services-container1{
+    height: 520px;
+    width: 90%;
+    margin: auto;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.second-container{
+    flex-direction: row-reverse;
+}
+.our-service{
+    /* background-color: beige; */
+    /* border: 2px solid black; */
+    width: 70%;
+    padding: 10px;
+    margin: 32px;
+}
+.paraHeading{
+    /* background-color: crimson;  */
+    margin-bottom: 20px;
+    height: 55px;
+    font-size: 40px;
+    /* text-decoration: underline; */
+    text-align: center;
+}
+.paraText{
+    /* background-color: cyan; */
+    height: 262px;
+    font-size: 22px;
+    text-align: center;
+}
+.first-photo img{
+    height: 300px;
+    width: 320px;
+    border-radius: 60%;
+}
+.contact-form-container{
+    height: 80vh;
+    width: 100%;
+background-image: url('../img/form1.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.8;
+z-index: -1;
+color: white;
+
+}
+.form-text-container{
+    position: relative;
+    top: 21%;
+    left: 12%;
+}
+.text-center{
+    margin: 10px;
+    font-family: cursive;
+}
+.our-form{
+    /* background-color: white; */
+    width: 400px;
+    /* margin-left: 45px; */
+    height: 500px;
+}
+.our-form input{
+    width: 100%;
+    font-size: 22px;
+    border-radius: 2%;
+    margin: 20px 0px;
+    padding: 5px 2px;
+}
+.our-form button{
+    height: 38px;
+    width: 136px;
+    font-size: 20px;
+    border: 2px solid rgb(253, 252, 252);
+    background: none;
+    padding: 4px;
+    color:rgb(156, 156, 58);
+    margin-top: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.our-form button:hover{
+    background-color: black;
+}
+.footer {
+    height: 70px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
+  #footer-icon a{
+      text-decoration: none;
+      color: black;
+  }
+  @media(max-width:1135px){
+      .our-service {
+          margin: 0px;
+      }
+    .first-photo img {
+        height: 275px;
+        width: 291px;
+  }
+  .paraText{
+    height: 372px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 6%;
+    padding: 14px;
+    text-align: center;
+  }
+}
+  @media (max-width:770px){
+      .myHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 57px 3px;
+    height: 400px;
+    width: 100%;
+      }
+      .nav-list{
+       
+        display: block;
+        text-align: center;
+      }
+      .nav-list li {
+        padding: 23px 60px;
+      }
+      .burger-icon{
+          display: block;
+      }
+      .logo img {
+        width: 30%;
+        margin: 0px 21px;
+    }
+      .content-text{
+          top: 22%;
+          left: 0%;
+          width: 100%;
+      }
+      .content-text p {
+          font-size: 15px;
+      }
+      .hidden-class{
+         visibility: hidden;
+      }
+      .services-container1{
+          flex-direction: column-reverse;
+          height: 80vh;
+      }
+      .paraHeading{
+        font-size: 34px;
+        margin-top: 14px;
+      }
+      .paraText{
+        font-size: 16px;
+        border: none;
+        border-radius: 0px;
+      }
+      /* .second-container {
+        height: 80vh;
+      } */
+
+  }
